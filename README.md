@@ -16,7 +16,6 @@ One such example of a chaotic system is the Henon Map. This is a symmetric and d
 
 - Where the system is only unpredictable if a = 1.4 & b = 0.3
 - Initial points X1 & Y1 serves as the symmetric keys
-\
 
 ### Design & Development
 A web application has been developed for users to have the ability to encrypt and decrypt images files (.png) using the Henon Map Chaotic System. Development is done using HTML+CSS as the front-end, Python as the back-end and the Flask Framework to integrate both front-end and back-end together. Atom (on Mac) was used as the code editor of choice.
@@ -33,7 +32,12 @@ For the back-end, there are 3 main files of interest:
 
 *Currently works on .png files and images with equal length-width dimensions; some sample images can be found on the sampleImages folder
 
-
+### Instructions
+1. Download the source code onto your local computer
+2. Ensure that the following libraries have been installed: Flask, Pillow, cv2, numpy
+3. Navigate to the file directory of the source code
+4. Run main.py
+5. Open your browser of choice and head to http://127.0.0.1:5000/
 
 
 
