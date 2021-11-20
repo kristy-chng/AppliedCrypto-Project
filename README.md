@@ -3,7 +3,7 @@
 NTU School of Computer Science and Engineering (AY2021/22 S1)
 CZ4010 Applied Cryptography
 
-This project is developed in accordance to the course project of CZ4010 Applied Cryptography. 
+This project is developed in accordance to the course project of CZ4010 Applied Cryptography.   
 **Title**: Implementation &amp; Analysis of Henon Map on Image Encryption
 
 ### Motivation
