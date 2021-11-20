@@ -45,4 +45,7 @@ For the back-end, there are 3 main files of interest:
 5. Open your browser of choice and head to http://127.0.0.1:5000/
 
 
-
+## References
+http://journal.uad.ac.id/index.php/TELKOMNIKA/article/view/83/479
+https://www.ijser.org/researchpaper/Image-Encryption-Using-Chaos-Maps.pdf
+http://www.tjprc.org/publishpapers/--1382093176-2.%20Image%20encryption.full.pdf
