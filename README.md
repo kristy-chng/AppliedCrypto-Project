@@ -15,7 +15,7 @@ As such, research works have led to the study of the linkage of traditional cryp
 
 One such example of a chaotic system is the Henon Map. This is a symmetric and deterministic system that creates pseudorandom sequences required for encryption via a chaotic equation. The equation is as follows: 
 
-![alt text](https://github.com/kristy-chng/AppliedCrypto-Project/blob/main/equation.png?raw=trues=200)
+![alt text](https://github.com/kristy-chng/AppliedCrypto-Project/blob/main/equation.png?raw=trues=50)
 
 - Where the system is only unpredictable if a = 1.4 & b = 0.3
 - Initial points X1 & Y1 serves as the symmetric keys
