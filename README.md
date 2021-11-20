@@ -20,15 +20,15 @@ One such example of a chaotic system is the Henon Map. This is a symmetric and d
 ### Design & Development
 A web application has been developed for users to have the ability to encrypt and decrypt images files (.png) using the Henon Map Chaotic System. Development is done using HTML+CSS as the front-end, Python as the back-end and the Flask Framework to integrate both front-end and back-end together. Atom (on Mac) was used as the code editor of choice.
 
-For the front-end, there are 3 main folders of interest:
-[1] styles: contains the style sheets for each web page  
-[2] uploads: stores images for display purposes; saved encrypted and decrypted images are stored here too  
-[3] templates: contains the structure for each web page (about page, encrypt page, decrypt page)  
+For the front-end, there are 3 main folders of interest:  
+1. styles: contains the style sheets for each web page  
+2. uploads: stores images for display purposes; saved encrypted and decrypted images are stored here too  
+3. templates: contains the structure for each web page (about page, encrypt page, decrypt page)  
 
-For the back-end, there are 3 main files of interest:
-[1] main.py: the main code to run the sever  
-[2] chaosTheory.py: provides the algorithm for image encryption/decryption and is used by main.py  
-[3] analysis.ipynb: a Jupyter notebook that provides the code for the analysis portion of the project  
+For the back-end, there are 3 main files of interest:  
+1. main.py: the main code to run the sever  
+2. chaosTheory.py: provides the algorithm for image encryption/decryption and is used by main.py  
+3. analysis.ipynb: a Jupyter notebook that provides the code for the analysis portion of the project  
 
 *Currently works on .png files and images with equal length-width dimensions; some sample images can be found on the sampleImages folder
 
