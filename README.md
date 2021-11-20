@@ -46,6 +46,6 @@ For the back-end, there are 3 main files of interest:
 
 
 ## References
-http://journal.uad.ac.id/index.php/TELKOMNIKA/article/view/83/479
-https://www.ijser.org/researchpaper/Image-Encryption-Using-Chaos-Maps.pdf
+http://journal.uad.ac.id/index.php/TELKOMNIKA/article/view/83/479  
+https://www.ijser.org/researchpaper/Image-Encryption-Using-Chaos-Maps.pdf  
 http://www.tjprc.org/publishpapers/--1382093176-2.%20Image%20encryption.full.pdf
