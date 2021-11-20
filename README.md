@@ -14,7 +14,7 @@ Many different algorithms such as AES and DES have been seen to be used for data
 As such, research works have led to the study of the linkage of traditional cryptography and chaos theory. Chaotic values are seen to be useful in encryption processes as it is generally easy to generate long chaotic pseudorandom sequences whose values seems to be uncorrelated (if the initial values and related parameters used for sequence generation are not known) - making it comparatively faster than other algorithms. 
 
 One such example of a chaotic system is the Henon Map. This is a symmetric and deterministic system that creates pseudorandom sequences required for encryption via a chaotic equation. The equation is as follows:  
-![alt text](https://github.com/[kristy-chng]/[AppliedCrypto-Project]/blob/[main]/equation.png?raw=true)
+![alt text](https://github.com/kristy-chng/AppliedCrypto-Project/blob/main/equation.png?raw=true)
 
 - Where the system is only unpredictable if a = 1.4 & b = 0.3
 - Initial points X1 & Y1 serves as the symmetric keys
