@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+
+{% block title %}embed & encrypt{% endblock %}
+{% block content %}
+
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/encryptPage.css') }}">
+
+<body>
+  <p style='font-weight:600;font-size:30px'>encrypt an image</p>
+  <p>This page allows users to encrypt an uploaded image.</p>
+
+  <hr class="my-4">
+
+  <div class="grid-container1">
+
+      <!-- encode container -->
+      <div class="grid-child">
+        <form method="post" action="{{ url_for('encode') }}" enctype="multipart/form-data">
+        <div class="w3-row-padding">
+          <div class = "w3-row">
+            <p class='pad1 heading1'> step 1: upload image</p>
+            <div class="w3-half">
+              <input type="file" name="file" class="form-control pad2"  style = 'width: 565px'accept=".png" required>
+            </div>
+          </div>
+          <div class='break'>
+              <br>
+          </div>
+
+
+          <p class='pad1 heading1'> step 2: input keys </p>
+
+
+          <!-- chaos key text input -->
+          <div class="w3-half">
+            <!-- <label> Key for ChaosTheory [1/2]</label> -->
+            <input id = 'ctKey1' name = "ctKey1" class="w3-input" type="number" min='0'step='any'
+            placeholder="enter chaosTheory key [1]" required>
+          </div>
+
+          <div class="w3-half">
+            <!-- <label>Key for ChaosTheory [2/2]</label> -->
+            <input id = 'ctKey2' name = "ctKey2" class="w3-input" type="number" min='0' step='any'
+            placeholder=" enter chaosTheory key [2] " required>
+            <div class='break'>
+                <br>
+            </div>
+          </div>
+
+          <div class = "w3-row">
+            <div class="w3-threequarter">
+              <p class='heading1'> step 3: input output file name</p>
+              <div style = 'position: relative'>
+                <input id= 'output' name = "output" class="w3-input pad1" type="text" placeholder = 'enter output file name'
+                required>
+                <label for="youridhere" class="static-value">.png</label>
+              </div>
+            </div>
+
+            <div class="w3-quarter">
+              <input type="submit" name = "submit_button" value="submit" class="btn btn-info"
+              style = 'width: 70%; margin-top: 44px; float:right; margin-bottom: 30px' >
+            </div>
+          </div>
+          <div class='break'>
+              <br>
+          </div>
+
+        </div>
+        </form>
+      </div>
+
+      <div class="grid-child verticalLine">
+      </div>
+
+      <!-- results container -->
+      <div class="grid-child">
+
+        {% if filename %}
+          {% if '.png' in filename %}
+            <!-- display uploaded image -->
+            <div class= "pad3">
+              <p class='heading1' style='margin-left:0px'> result: modified image</p>
+              <img src="{{filename}}" width="400" height="280">
+            </div>
+            <p id='cipherText' style = 'margin-right: 10px; margin-top: 15px;margin-left: 13px'>
+              <b>cipher text:</b> {{cipherText}}</p>
+            <p style = 'margin-top: 15px;margin-left: 13px'><b>file path:</b> {{filename}}</p>
+          {% endif %}
+          {% else %}
+          <p class='heading1' style='margin-left:0px; margin-top:160px; text-align: center'> results panel </p>
+          <p style='text-align: center'>oops, nothing to see here</p>
+        {% endif %}
+
+      </div>
+  </div>
+
+
+
+</body>
+{% endblock %}

@@ -1,0 +1,116 @@
+.intro-text, .form-group {
+  font-size: 14px;
+}
+.break{
+  line-height:120%;
+}
+.verticalLine {
+  float:left;
+  height:470px;
+  width:1px; /* edit this if you want */
+  background-color: #D3D3D3
+ /* border-left: 1px solid #D3D3D3; */
+}
+
+.heading1{
+  font-weight:600;
+  font-size:18px;
+  margin-left:8px;
+}
+
+.static-value{
+	position:absolute;
+  border-left: 1px solid black;
+  padding: 0 0 0 10px;
+	right:13px;
+	font-weight:bold;
+	font-size:16px;
+	top:9px;
+}
+#cipherText { word-break: break-all }
+
+body{
+  background: #F1F1E6;
+}
+
+.grid-container1 {
+    display: grid;
+    grid-template-columns: 1fr 0.1fr 0.8fr;
+    grid-gap: 20px;
+}
+
+.pad1 {
+  margin-left: 8px;
+}
+
+.input1{
+  width: 97%;
+}
+
+.pad2 {
+  z-index: 1000;
+  cursor: pointer;
+  margin-left: 8px;
+  right: 0;
+  top: 0;
+  height: 100%;
+  font-size: 15px;
+  width: 100%;
+}
+.pad3 {
+ margin-left: 10px;
+}
+
+input[type="button"], input[type="submit"] {
+  color:#ffff;
+  background-color:#3F4A59;
+  border:1px solid;
+  border-color: #3F4A59;
+  margin-right:8px;
+}
+
+input[type="file"]{
+  border:1px solid;
+  border-color: #3F4A59;
+}
+
+input[type="text"], input[type="number"]
+{
+  border:1px solid;
+  border-color: #3F4A59;
+  border-radius: 5px;
+  line-height: 14px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#aesKey:valid,input[type="text"]:valid:not(:placeholder-shown),input[type="file"]:valid{
+  background: url('https://webdevtrick.com/wp-content/uploads/check-icon.svg');
+  background-size: 23px;
+  background-repeat: no-repeat;
+  background-position: 517px 8px;
+  background-color: #fff;
+}
+
+#output:valid:not(:placeholder-shown){
+  background: url('https://webdevtrick.com/wp-content/uploads/check-icon.svg');
+  background-size: 23px;
+  background-repeat: no-repeat;
+  background-position: 328px 8px;
+  background-color: #fff;
+}
+
+#ctKey1:valid, #ctKey2:valid
+{
+  background: url('https://webdevtrick.com/wp-content/uploads/check-icon.svg');
+  background-size: 23px;
+  background-repeat: no-repeat;
+  background-position: 238px 8px;
+  background-color: #fff;
+}
+.alert {
+width:1100px;
+}

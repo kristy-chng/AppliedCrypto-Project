@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}about the project{% endblock %}
+{% block content %}
+
+<style>
+  body{
+    background: #F1F1E6;
+  }
+
+</style>
+
+<body>
+<p style='font-weight:600;font-size:30px'>hello, world!</p>
+<p>I'm Kristy and I am currently a Year 4 student studying Computer Science in the Nanyang Technological University.</p>
+<p>This website is a project done for the module CZ4010 Applied Cryptography.
+It provides users the ability to perform image encryption - that is, hiding its true form of the image.
+its original form.</p>
+<hr class="my-4">
+
+<p style='font-weight:600;font-size:18px'>ok, so how does this work?</p>
+<p>To ensure that no one will be able to an image, the whole image itself will be encrypted using <b>the Henon Map Chaotic System.</b></p>
+<p>And so, no one will be able to snoop on your data unless they have your secret keys.</p><br>
+</body>
+{% endblock %}
